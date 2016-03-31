@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GeoSync GO Plus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/materialize.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+	</head>
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img id="go-logo" src="/img/go_logo_white.png" /></a>
+            <ul id="main-nav" class="right">
+                
+                    <li><a href="/">Home<i class="mdi-action-home right"></i></a></li>
+                    <li class="active"><a href="/docs">Docs<i class="mdi-action-bookmark-outline right"></i></a></li>
+                
+            </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col hide-on-small-only m3">
+                        <ul id="toc" class="table-of-contents">
+                            
+                                
+                                    <li><a href="/docs">Getting Started</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs">Getting Started</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs/using-the-map">Using the Map</a></li>
+                                
+                            
+                                
+                                    <li><a class="active" href="/docs/managing-projects">Managing Projects</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#administration-console">Administration Console</a></li>
+                                        
+                                            <li><a href="#account">Account</a></li>
+                                        
+                                            <li><a href="#users">Users</a></li>
+                                        
+                                            <li><a href="#sources">Sources</a></li>
+                                        
+                                            <li><a href="#styles">Styles</a></li>
+                                        
+                                            <li><a href="#layers">Layers</a></li>
+                                        
+                                            <li><a href="#tilesets">Tilesets</a></li>
+                                        
+                                            <li><a href="#searches">Searches</a></li>
+                                        
+                                            <li><a href="#projects">Projects</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                                
+                                    <li><a class="active" href="/docs/managing-projects">Managing Projects</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#administration-console">Administration Console</a></li>
+                                        
+                                            <li><a href="#account">Account</a></li>
+                                        
+                                            <li><a href="#users">Users</a></li>
+                                        
+                                            <li><a href="#sources">Sources</a></li>
+                                        
+                                            <li><a href="#styles">Styles</a></li>
+                                        
+                                            <li><a href="#layers">Layers</a></li>
+                                        
+                                            <li><a href="#tilesets">Tilesets</a></li>
+                                        
+                                            <li><a href="#searches">Searches</a></li>
+                                        
+                                            <li><a href="#projects">Projects</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                                
+                                    <li><a href="/docs/using-the-map">Using the Map</a></li>
+                                
+                            
+                        </ul>
+                        &nbsp;
+                    </div>
+                    <div id="contents" class="col s12 m9">
+                        <h2 id="administration-console">Administration Console</h2>
+<p>This area is where all the configuration for our projects takes place. Only users with admin privileges can access this area.
+It is broken down into sections for creating modular pieces that can be combined to form a project. </p>
+<h2 id="account">Account</h2>
+<p>The Account view shows current information about your account. There are four progress bars that help you track your resource usage. The limits
+on each usage meter is dictated by your account tier.</p>
+<p>The top bar shows the number of users on your account. If you do not have any user slots left, you will not be able to create more users.</p>
+<p>The second bar shows your storage usage. This is how much space your files are occupying on our cloud service. All your geographic data along with
+any uploaded media is included in this total.</p>
+<p>The next bar indicates your data transfer for the month. This value reflects all the requeusts that transfer data out of your account. Viewing any data
+from the map or in the Administration Console uses a small amount of data. This bandwidth usage accumulates over the period of a month. If your 
+account limit is exceeded, the availability or performance of your account may be affected. At the end of the month the usage is reset and normal
+operation of your account should be restored.</p>
+<p>The last bar is the reports that have been submitted for the current month. Every user that saves a report will add to this total. Just like the
+data transfers, this total is accumlated for one month at a time and resets at the end of the month. If the limit is exceeded no more reports will be
+able to be sent to your account until the next month.</p>
+<p>Every section of the console shows a grid of all the items in that category. The grid can be sorted and filtered. Every grid will have options at the
+top to manage the category. The New option will be there in most circumstances, which will let you create a new item in the current category. If an item
+in the category is selected, Edit and Delete options will also be available that act on the selected row. Some sections include an
+Import option on the grid view. This will bring up a list of preconfigured items created by MapSync. Clicking on one of the items will
+import it into your project where it can be customized.</p>
+<p>In every section a name field is used with an item. In most situations the name field is there for your reference, so always set it to something that
+helps to easily identify that item.</p>
+<h2 id="users">Users</h2>
+<p>This section lets you manage the users on your account.</p>
+<p>The <strong>Login</strong> field is the username that will be entered for the user to sign in to his/her account. The login must meet certain requirements and
+be available. </p>
+<p><strong>Email</strong> is the user&#39;s email address.</p>
+<p><strong>Password</strong> is the password that will be used to sign in. The password must meet certain requirements to be valid.</p>
+<p>The <strong>Owner</strong> value indicates the primary user of the account. This user can never be deleted and has more privileges than any other user.</p>
+<p>The <strong>Disabled</strong> setting makes a user inactive and prevents the user from signing in.</p>
+<h2 id="sources">Sources</h2>
+<p>Sources are the data that will used for your project. This data can come from several different locations.</p>
+<p>The <strong>Type</strong> sets the format of the expected data.</p>
+<p>The empty setting just makes a blank data source. Currently this is not very useful, but in the future you will be able to add features to a blank
+data source, so that data can be built from scratch.</p>
+<p>If the type is Shapefile, File Geodatabase, Keyhole Markup, GPS Exchange Format, Comma Separated Values, GeoJSON or MapSync GSE. The form expects a file
+to be uploaded with geographic data formatted to match the type specified. </p>
+<p>If Shapefile or File Geodatabase is selected, the uploaded file is expected to be in a zip file. </p>
+<p>If Comma Separated Values is selected, you will need to enter the names of the fields that contain the latitude and longitude, and also the
+separator character that is used in the file (default is comma).</p>
+<p>If MapSync Cloud SQL is selected, the source expects a connection to a database. The form will automatically recognize any databases associated with your
+account. You will need to choose which database to use and then which table to connect to.</p>
+<p>If ArcGIS Feature Service or Web Feature Service is selected, the source expects a URL. This will be the base path for the feature service. In the 
+case of the Web Feature Service the name of the source must match the Feature Type expected by the feature service.</p>
+<h2 id="styles">Styles</h2>
+<p>This sets the appearance of the data. There is preview link on the MARKER header that lets your see the marker style and a preview link on the
+POLYLINE / POLYGON header that lets yon see the shape style.</p>
+<h4 id="marker-options">Marker Options</h4>
+<p>The <strong>Marker Type</strong> is the base style for the marker. Simple markers are flat shapes with icons on them. These markers are anchored at the center of the
+feature. Simple markers have an adjustable size. The non-simple markers use shadows to show up like a map pin. With these marker, the bottom of the image is anchored to the feature location. The size 
+of these markers is not adjustable.</p>
+<p><strong>Marker Color</strong> is the color of the marker. If <strong>Marker Type</strong> is simple, the input accepts simple color names or hexadecimal values for complex colors.
+Use the choose link to select a color from a color palette.
+If <strong>Marker Type</strong> is non-simple, the color is selected from a dropdown box.</p>
+<p><strong>Marker Opacity</strong> sets the transparency of the marker.</p>
+<p><strong>Marker Icon</strong> is the symbol that appears on the marker. Use the choose link to select from a list of icons.</p>
+<p><strong>Icon Color</strong> is the color of the marker icon. Input works the same as the simple marker color input.</p>
+<p><strong>Marker Size</strong> and <strong>Icon Size</strong> are only available for simple markers. It increases or decreases the pixel size of the marker and icon.</p>
+<p><strong>Clickable</strong> means that the user can click the marker and select the feature on the map. Disabling this can
+be ideal for layers that are only provided for reference and have no need to be selected by the user.</p>
+<p><strong>Label Display</strong> sets whether a label is attached to the marker. By default there is no label. You can set a label to appear when a user hovers over a marker
+or a label can be set to always be visible.</p>
+<h4 id="polyline-polygon-options">Polyline / Polygon Options</h4>
+<p><strong>Stroke Color</strong> is the exterior color of the shape. In polylines, this will be the only visible color. In polygons, this color is the outline of the shape.</p>
+<p><strong>Fill Color</strong> is the interior color of the shape.</p>
+<p><strong>Stroke Opacity</strong> is the transparency of the shape exterior.</p>
+<p><strong>Fill Opacity</strong> is the transparency of the shape interior.</p>
+<p><strong>Stroke Pattern</strong> allows you to set the appearance of the line stroke. By default it is a solid line, but can be set to have a dotted or dashed appearance.</p>
+<p><strong>Fill Rule</strong> is how the interior of a complex shape is determined. In most circumstances, this can be ignored, but if there is a complex shape that is
+not being rendered correctly, it might help to change the fill rule for that shape.</p>
+<p><strong>Stroke Weight</strong> is the thickness of the line stroke. A higher number will make the line wider.</p>
+<p><strong>Smooth Factor</strong> is how much to simplify the shape exterior to display a smoother line. Increasing this can be helpful for map performance if you have 
+a shape with a lot of points.</p>
+<p><strong>Stroke Visible</strong> sets the visibility of the shape exterior. Turning this off will make polylines invisible.</p>
+<p><strong>Fill Visible</strong> sets the visibility of the shape interior. For polygons,
+this allows you show a shape with an interior shading.</p>
+<p><strong>Clickable</strong> means that the user can click the shape to select the feature on the map.</p>
+<p>By default, a marker is placed at the center of a shape. If you want the shape to be displayed without a marker, enable <strong>Hide Marker</strong>.</p>
+<p><strong>Label Display</strong> sets whether a label is attached to the shape. By default there is no label. You can set a label to appear when a user hovers over a shape
+or a label can be set to always be visible.</p>
+<h2 id="layers">Layers</h2>
+<p><strong>Type</strong> determines how users interact with the layer. A Base Layer can always be seen regardless of the active layer that is set. Multiple Base Layers can
+all be rendered on the map at the same time. Feature Sets are only selected one at a time from the layer toolbar. When a different Feature Set is
+selected the previous Feature Set is unloaded.</p>
+<p>The main adavantage to Base Layers is that an entire map with multiple, selectable layers can be presented. Users wouldn&#39;t need to switch layers to 
+interact with all the features. The downside is that if there a lot of Base Layers in your project, this could not only make your map complicated 
+to understand, but it could effect the performance of the map, especially on mobile devices. Also, the data transfer usage of your project would be
+higher because more data is being sent per map redraw.</p>
+<p>Feature Sets provide a simpler experience where users can see and interact with the data of one layer. The other upside is that Feature Sets enable 
+the Grid View option that allows the data to be viewed in a spreadsheet-like format. However, users would have to understand how to switch between
+layers with the layer toolbar to work effectively with Feature Sets.</p>
+<p>There is not just one way to create layers. You will probably want to mix and match layer types to provide the best experience and that can vary
+depending on an organization&#39;s needs.</p>
+<p><strong>Minimum Zoom</strong> is the highest zoom level that the layer will be displayed. <strong>Maximum Zoom</strong> is the lowest level that the layer will be displayed. These
+two values create a range where your layer will be visible. If you start zooming down from level 1, the <strong>Minimum Zoom</strong> is the first level where your
+layer will be seen and as your keep zooming, the <strong>Maximum Zoom</strong> is the last level where your layer will be seen.</p>
+<p><strong>Draw Limit</strong> is the number of features that will displayed in one map view. This number helps to tune the performance of your map. If there is a dense
+area of features in your map, you might want to use this setting to make sure the layers work consistently across all devices.</p>
+<p><strong>Draw Priority</strong> is a value that determines the order of layers when multiple layers are displayed at once. The lower the Draw Priority of a layer, the
+higher it is placed on the stack of other layers. You can think of it like a competition, first place gets placed on top. Likewise, a Draw Priority
+of one is placed on top of the other layers.</p>
+<p><strong>Disable Dynamic Loading</strong> lets you change how your layer is viewed on the map. By default, a layer is requested and redrawn based on the bounding box
+of the current map view. This allows large layers to be performant by requesting one piece at a time. If this setting is enabled, then the layer 
+is loaded all at once on the map and not redrawn when the map view changes. This can be a useful setting for smaller layers or layers that you wish
+to cluster.</p>
+<p><strong>Enable Clustering</strong> is only available when <strong>Disable Dynamic Loading</strong> is checked. This setting groups the layer features together and allows the user to
+click on the groups to drill down to the features. As you get lower the groups separate into smaller groups and eventually the selectable features will
+be displayed. If features are still close together at the maximum zoom level of the map a cluster will still be displayed, but the user can click on the cluster to
+view a selectable list of features in the cluster.</p>
+<p><strong>Initially Toggled Off</strong> is only available if the <strong>Type</strong> is set to Base Layer. This setting turns the Base Layer off by default and the user will have
+to use the Base Layers view from the map to make the layer visible.</p>
+<h4 id="source">Source</h4>
+<p>The <strong>Source</strong> is the data that the layer will use. The list includes all the sources created in the sources section.</p>
+<p>The <strong>Label Field</strong> is the data that will be used to display a label if the style is set to show a label. This should be a field that helps the user
+recognize a feature. This is the first field that is an autocomplete field. Depending on the selected source, this input will populate with
+a list of fields. When you click into the input, you can select a field from the list or you can ignore the options and type the field name.</p>
+<p><strong>Filters</strong> allow you to pull specific data out of the source. This is very useful for displaying a subset of data in your layer. With filters, you can
+split data from a single source into multiple layers. To create a filter rule, set the field, the operator and the value and click the add button (+).
+This can be repeated as many times as needed to create a complex filter. In our getting started example we could create a filter on the Subway
+Stations layer to only show the stations on the red subway line. We would set the field to LINE, use the equal (=) operator, set the value to
+RED and click the add button (+).</p>
+<h4 id="style">Style</h4>
+<p>This is where we set the appearance of our layer. The list includes all the styles created in the styles section.</p>
+<p>The <strong>Default Style</strong> is required and sets the style of the entire layer.</p>
+<p><strong>Conditional Styles</strong> are set just like filters, but instead of filtering they apply styles based on the statement. All Conditional Styles are applied to
+a layer first, if no Conditional Styles apply to a feature then the Default Style is used. Like our filter example, we can set the field to LINE, 
+use the equal (=) operator, set the value to RED and click the add button (+). Now we have a selection next to the rule that allows us to apply a style
+to all the features that match that rule. In this case we could have a style that makes all the markers red, then we could set all the stations on
+the red subway line to have red markers.</p>
+<h2 id="tilesets">Tilesets</h2>
+<p><strong>Tile Size</strong> is the pixel width of the tiles in the tileset. This is typically 256, but if a service uses a different tile size it can be set here.</p>
+<p><strong>URL Template</strong> is the URL used to load the tiles formatted with a few variable values so that the map knows how to request the tiles. A sample template looks
+like:</p>
+<pre><code class="lang-js">http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png
+</code></pre>
+<p>{s} = The possible subdomains for the tile service. If only served from one subdomain, this variable can be left out.<br>{z} = The current zoom level of the map.<br>{x} = The x position of the tile.<br>{y} = The y position of the tile.  </p>
+<p>Depending on the service these variables should be at different positions in the URL.</p>
+<p><strong>Subdomains</strong> is the list of subdomains the tiles are served from. Tile services use multiple subdomains to increase the reliability of serving map tiles.
+An example list is below:</p>
+<pre><code class="lang-js">[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]
+</code></pre>
+<p>Each letter is a different subdomain.</p>
+<p><strong>Attribution</strong> is the text that appears at the bottom of the map when displaying tiles from the tileset. This is sometimes necessary to meet the licensing
+requirements of using a tile service.</p>
+<p><strong>Minimum Zoom</strong> and <strong>Maximum Zoom</strong> is the same as on a layer. This is the range of zoom levels where the tileset will be visible.</p>
+<p><strong>Opacity</strong> sets the transparency of the tiles displayed on the map.</p>
+<p><strong>Z Index</strong> is the order that the tilesets are stacked in if there are multiple tilesets shown at the same time. A higher Z Index means the tileset is
+higher on the stack and will be shown on top of tilesets with a lower Z Index.</p>
+<p><strong>Initially Toggled Off</strong> works the same as with the Base Layer. This will make the tileset off by default. The user has the ability to go to the Tilesets
+view in the map to turn on the tileset.</p>
+<h2 id="searches">Searches</h2>
+<p>A search allows the user to lookup data from a specific source. </p>
+<p><strong>Source</strong> is the data that will be used to search against.</p>
+<p><strong>Search Field</strong> is the field that will be the target of the search. Anything searched by the user will use this field to look for approximate matches.</p>
+<p><strong>Display Fields</strong> is a list of fields to display in addition to the search field. These allow you to provide more information with your search results.</p>
+<p><strong>Filters</strong> work identically to layer filters. They can force the search to only use a subset of the source data.</p>
+<h2 id="projects">Projects</h2>
+<p>This is how we assemble all the work we&#39;ve done.</p>
+<p><strong>Alias</strong> is a simple identifier for the project. In the case of a project that is using forms created in GeoSync GO Desktop, this field will need to be set
+to the Project ID of any existing project.</p>
+<p><strong>Initial Latitude</strong>, <strong>Initial Longitude</strong> and <strong>Initial Zoom</strong> are all values that determine where the map is positioned on the initial loading of the project. Use the choose
+link to set these values by using the map preview.</p>
+<p><strong>Minimum Zoom</strong> and <strong>Maximum Zoom</strong> set the zoom levels for the entire project. The user will not be able to zoom out beyond the <strong>Minimum Zoom</strong> or zoom in
+beyond the <strong>Maximum Zoom</strong>.</p>
+<p><strong>Public Access</strong> makes the project available at a direct web URL and also lists the map in the Discover Maps interface. This is useful for sharing a map
+with a large group without having to create individual user accounts.</p>
+<p>If <strong>Public Access</strong> is enabled, the <strong>Path</strong> field is available. By default this is populated by a random ID. This path will be the unique part of the URL for
+your map. This can be changed to something more readable, but it must be unique across all public maps. This field will check to see if the path is
+available before saving.</p>
+<p>A <strong>Passphrase</strong> can also be set for public maps. This a simple test to insure the user should be allowed to view the public map. This passphrase should just
+be considered a simple form of security. The passphrase could be guessed or shared to provide access to unknown parties. If the Passphrase is left blank
+then the map will be open to anyone with the URL.</p>
+<p>The <strong>Description</strong> adds information to your public map listing on the discover maps page. The public map name and description will be available on the
+search results.</p>
+<p>The <strong>Disabled</strong> option makes a project inactive and prevents anyone from accessing it.</p>
+<h4 id="users">Users</h4>
+<p>The USERS section allows you to set the users who have access to the project. By default, no one has access. Select the desired user and click the add
+button (+) to link the user to the project. After adding a user to the project, you can then set permissions for that user. The top checkboxes of the
+permissions is related to the reading, writing and deleting of feature links.</p>
+<p><i class="mdi-action-visibility small left"></i> This option gives the user permission to view the links that are related to the selected feature. If 
+disabled, the users LINKS tab on the Properties Pane will always be empty.</p>
+<p><i class="mdi-image-edit small left"></i> This setting lets the user attach new links to a selected feature. If disabled, the attach link button will
+not be visible for the user.</p>
+<p><i class="mdi-action-delete small left"></i> This lets a user delete links from a selected feature. This action is not implemented yet.</p>
+<p>The Forms section of the permissions only has one option:</p>
+<p><i class="mdi-image-edit small left"></i> This option allows the user to open forms and create reports for the selected feature. If disabled, the
+buttons for creating and editing reports will be hidden. Also, the History section of the Action Menu will not be available.</p>
+<p>If <strong>Public Access</strong> is enabled, then there will also be section listed here to set the permissions for all public users.</p>
+<h4 id="layers">Layers</h4>
+<p>Set all the layers available in the project. To add a layer select it in the dropdown and click the add button (+).</p>
+<p>The <strong>Default Layer</strong> option allows you to define a Feature Set that will automatically be set as the active layer when the map is loaded. Items will only be
+available in this list if you have added a Feature Set to the project layers.</p>
+<h4 id="tilesets">Tilesets</h4>
+<p>Set all the tilests available in the project. To add a tileset select it in the dropdown and click the add button (+).</p>
+<h4 id="searches">Searches</h4>
+<p>Set all the searches available in the project. To add a search select it in the dropdown and click the add button (+).</p>
+
+                    </div>
+                
+            </div>
+        </div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+                    <li><a href="https://www.youtube.com/user/mapsync" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					<li><a href="https://twitter.com/mapsync_co" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/MapSync/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="mailto:info@mapsync.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+                &copy <a href="http://www.mapsync.com">MapSync</a>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+            <script src="/js/materialize.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#toc').pushpin({ top: $('#toc').offset().top, bottom: $('#contents').height()- $('#toc').height() });
+                    $('h2').scrollSpy();
+                });
+            </script>
+	</body>
+</html>

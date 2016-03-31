@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GeoSync GO Plus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/materialize.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+	</head>
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img id="go-logo" src="/img/go_logo_white.png" /></a>
+            <ul id="main-nav" class="right">
+                
+                    <li><a href="/">Home<i class="mdi-action-home right"></i></a></li>
+                    <li class="active"><a href="/docs">Docs<i class="mdi-action-bookmark-outline right"></i></a></li>
+                
+            </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col hide-on-small-only m3">
+                        <ul id="toc" class="table-of-contents">
+                            
+                                
+                                    <li><a href="/docs">Getting Started</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs">Getting Started</a></li>
+                                
+                            
+                                
+                                    <li><a class="active" href="/docs/using-the-map">Using the Map</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#understanding-the-interface">Understanding the Interface</a></li>
+                                        
+                                            <li><a href="#map-pane">Map Pane</a></li>
+                                        
+                                            <li><a href="#zoom-toolbar">Zoom Toolbar</a></li>
+                                        
+                                            <li><a href="#layer-toolbar">Layer Toolbar</a></li>
+                                        
+                                            <li><a href="#location-toolbar">Location Toolbar</a></li>
+                                        
+                                            <li><a href="#properties-pane">Properties Pane</a></li>
+                                        
+                                            <li><a href="#action-menu">Action Menu</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                                
+                                    <li><a href="/docs/managing-projects">Managing Projects</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs/managing-projects">Managing Projects</a></li>
+                                
+                            
+                                
+                                    <li><a class="active" href="/docs/using-the-map">Using the Map</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#understanding-the-interface">Understanding the Interface</a></li>
+                                        
+                                            <li><a href="#map-pane">Map Pane</a></li>
+                                        
+                                            <li><a href="#zoom-toolbar">Zoom Toolbar</a></li>
+                                        
+                                            <li><a href="#layer-toolbar">Layer Toolbar</a></li>
+                                        
+                                            <li><a href="#location-toolbar">Location Toolbar</a></li>
+                                        
+                                            <li><a href="#properties-pane">Properties Pane</a></li>
+                                        
+                                            <li><a href="#action-menu">Action Menu</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                        </ul>
+                        &nbsp;
+                    </div>
+                    <div id="contents" class="col s12 m9">
+                        <h2 id="understanding-the-interface">Understanding the Interface</h2>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <img src="/img/interface.png" alt="GSGO+ Interface" title="GSGO+ Interface">
+    </div>
+    <div class="col s12 m12 l3">
+        <i class="fa fa-a"></i> Map Pane<br>        <i class="fa fa-b"></i> Zoom Toolbar<br>        <i class="fa fa-c"></i> Layer Toolbar<br>        <i class="fa fa-d"></i> Location Toolbar<br>        <i class="fa fa-e"></i> Properties Pane<br>        <i class="fa fa-f"></i> Action Menu
+    </div>
+</div>
+
+<h2 id="map-pane">Map Pane</h2>
+<p>The map pane renders the geographic data. Below is a list of available map interactions:</p>
+<div class="row">
+    <div class="col s12 m6">
+        <strong>Touch Screen Device</strong><br>        Swipe to pan<br>        Pinch to zoom<br>        Tap to select feature<br>        Tap and hold to set user point
+    </div>
+    <div class="col s12 m6">
+        <strong>Non-touch Screen Device</strong><br>        Drag to pan<br>        Scroll to zoom<br>        Click to select feature<br>        Right-click to set user point
+    </div>
+</div>
+
+<p>Selected features are highlighted in green with a checkmark icon. There can only be one selected feature at a time. The Properties Pane
+information always corresponds to the current selected feature.</p>
+<p>The user point is only available if the currently signed in user has permission to submit forms. This action allows you to place a marker anywhere
+on the map.</p>
+<h2 id="zoom-toolbar">Zoom Toolbar</h2>
+<p><i class="mdi-navigation-menu small left"></i> Toggles the Action Menu  </p>
+<p><i class="mdi-content-add small left"></i> Zooms in  </p>
+<p><i class="mdi-content-remove small left"></i> Zooms out</p>
+<p>The number indicates the current zoom level of the map. Based on this number the visibility of some layers and tilesets may change.</p>
+<h2 id="layer-toolbar">Layer Toolbar</h2>
+<p>This element displays the active layer. Clicking on it allows the user to switch between layers. All layers labeled as Feature Sets will appear
+in this list. Selecting Base Layer in this toolbar will turn off the active layer. If the user has permission to submit forms, there will also
+be a History option in this list. The History layer displays the location of forms submitted to the current project that are saved on that device.</p>
+<p>When an active layer is set, only features from the active layer can be selected. If you wish to select a feature from the base layer, you have to
+set the active layer back to Base Layer.</p>
+<h2 id="location-toolbar">Location Toolbar</h2>
+<p><i class="mdi-device-gps-not-fixed small left"></i> Geolocation is off, click to enable  </p>
+<p><i class="mdi-device-gps-fixed small left"></i> Geolocation is on, click to disable</p>
+<h2 id="properties-pane">Properties Pane</h2>
+<p>The Properties Pane displays the properties of the selected feature. The DETAILS tab shows the feature data in name-value pairs. The LINKS tab lists
+all the images, documents and websites that have been related to the current feature.</p>
+<p>At the bottom of the Properties Pane there is a Selected Feature Toolbar. Depending on the project, some of these buttons may not be available.</p>
+<p><i class="mdi-av-playlist-add small left"></i> Create report - If the user has permission to submit forms, this button will allow them to 
+create a report that will be linked to the selected feature.</p>
+<p><i class="mdi-content-create small left"></i> Edit report - If a saved report is selected from the History layer, this action lets the
+report be edited and resent as a new report.</p>
+<p><i class="mdi-content-filter-list small left"></i> Grid view - This shows all visible features of the active layer in a spreadsheet-like view. The grid
+can sort and filter the features. Selecting a feature on the grid will select and center the feature on the map.</p>
+<p><i class="mdi-content-link small left"></i> Add link - A user with suffcient permission can attach links to the selected feature. Image and documents
+can be uploaded, while websites can simply be linked by setting the URL.</p>
+<p><i class="mdi-maps-pin-drop small left"></i> Share location - This generates a link that can be shared to send another user to exactly the same position 
+with the same feature selected.</p>
+<h2 id="action-menu">Action Menu</h2>
+<p>This menu contains task-oriented information.</p>
+<p><i class="mdi-content-content-paste small left"></i> Projects - This view lists all projects that are available for the current user. Clicking on a 
+project will display it on the map.</p>
+<p><i class="mdi-action-search small left"></i> Searches - This view lists all the searches available for the current project. If there is an active
+layer, an Active Layer Search will be listed that searches across all fields in the active layer data. Custom searches will also be listed here that
+search on one field from a specific data source.</p>
+<p><i class="mdi-editor-border-style small left"></i> Measure - This view performs calculations for measuring distances and areas. Once you start 
+measuring, clicking on the map will set a new shape vertex. The area and distance display will automatically update.</p>
+<p><i class="mdi-maps-place small left"></i> Find XY - Enter latitude and longitude to zoom to a location on the map.</p>
+<p><i class="mdi-action-history small left"></i> History - List view of all the reports saved to the current project on the device. Click on a report 
+to select it on the map. Clear history link (<i class="mdi-image-timer"></i>) at the top clears all saved reports for the current project from the device.</p>
+<p><i class="mdi-device-wifi-tethering small left"></i> GPS Status - Available when geolocation is enabled. Displays information about the current GPS
+position.</p>
+<p><i class="mdi-editor-vertical-align-bottom small left"></i> Base Layers - List view of all base layers in the current project. Individual layers
+can be toggled on and off by using the checkboxes.</p>
+<p><i class="mdi-action-view-module small left"></i> Tilesets - List view of all tilesets in the current project. Individual tilesets
+can be toggled on and off by using the checkboxes.</p>
+<p><i class="mdi-action-verified-user small left"></i> Account - Available to users with admin privileges. Opens the Administration Console.</p>
+<p><i class="mdi-action-exit-to-app small left"></i> Sign out - Signs out current user and redirects to the sign in screen.</p>
+
+                    </div>
+                
+            </div>
+        </div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+                    <li><a href="https://www.youtube.com/user/mapsync" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					<li><a href="https://twitter.com/mapsync_co" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/MapSync/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="mailto:info@mapsync.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+                &copy <a href="http://www.mapsync.com">MapSync</a>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+            <script src="/js/materialize.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#toc').pushpin({ top: $('#toc').offset().top, bottom: $('#contents').height()- $('#toc').height() });
+                    $('h2').scrollSpy();
+                });
+            </script>
+	</body>
+</html>

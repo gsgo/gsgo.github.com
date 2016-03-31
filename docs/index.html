@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GeoSync GO Plus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/materialize.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+	</head>
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img id="go-logo" src="/img/go_logo_white.png" /></a>
+            <ul id="main-nav" class="right">
+                
+                    <li><a href="/">Home<i class="mdi-action-home right"></i></a></li>
+                    <li class="active"><a href="/docs">Docs<i class="mdi-action-bookmark-outline right"></i></a></li>
+                
+            </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col hide-on-small-only m3">
+                        <ul id="toc" class="table-of-contents">
+                            
+                                
+                                    <li><a class="active" href="/docs">Getting Started</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#initial-setup">Initial Setup</a></li>
+                                        
+                                            <li><a href="#your-first-map">Your First Map</a></li>
+                                        
+                                            <li><a href="#sources">Sources</a></li>
+                                        
+                                            <li><a href="#styles">Styles</a></li>
+                                        
+                                            <li><a href="#layers">Layers</a></li>
+                                        
+                                            <li><a href="#tilesets">Tilesets</a></li>
+                                        
+                                            <li><a href="#projects">Projects</a></li>
+                                        
+                                            <li><a href="#viewing-the-map">Viewing the Map</a></li>
+                                        
+                                            <li><a href="#map-discovery">Map Discovery</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                                
+                                    <li><a class="active" href="/docs">Getting Started</a>
+                                        <ul id="sections" class="table-of-contents">
+                                        
+                                            <li><a href="#initial-setup">Initial Setup</a></li>
+                                        
+                                            <li><a href="#your-first-map">Your First Map</a></li>
+                                        
+                                            <li><a href="#sources">Sources</a></li>
+                                        
+                                            <li><a href="#styles">Styles</a></li>
+                                        
+                                            <li><a href="#layers">Layers</a></li>
+                                        
+                                            <li><a href="#tilesets">Tilesets</a></li>
+                                        
+                                            <li><a href="#projects">Projects</a></li>
+                                        
+                                            <li><a href="#viewing-the-map">Viewing the Map</a></li>
+                                        
+                                            <li><a href="#map-discovery">Map Discovery</a></li>
+                                        
+                                        </ul>
+                                    </li>
+                                
+                            
+                                
+                                    <li><a href="/docs/using-the-map">Using the Map</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs/managing-projects">Managing Projects</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs/managing-projects">Managing Projects</a></li>
+                                
+                            
+                                
+                                    <li><a href="/docs/using-the-map">Using the Map</a></li>
+                                
+                            
+                        </ul>
+                        &nbsp;
+                    </div>
+                    <div id="contents" class="col s12 m9">
+                        <h2 id="initial-setup">Initial Setup</h2>
+<p>Using GeoSync GO Plus (GSGO+) requires an account. If you do not have an account, please contact <a href="mailto:info@mapsync.com">MapSync</a> to get more information.</p>
+<p>The following applications are recommended for using GSGO+  </p>
+<div class="row" style="text-align:center;">
+    <div class="col s4">
+        <a href="https://gsgo.blob.core.windows.net/gsgo-plus/Releases/setup.exe"><i class="fa fa-windows small"></i><br>Windows</a>
+    </div>
+    <div class="col s4">
+        <a href="https://play.google.com/store/apps/details?id=com.mapsync.geosync_go_plus&hl=en"><i class="fa fa-android small"></i><br>Android</a>
+    </div>
+    <div class="col s4">
+        <a href="https://itunes.apple.com/us/app/geosync-go-plus/id1090703029?mt=8"><i class="fa fa-apple small"></i><br>iOS</a>
+    </div>
+    <br><br><br>
+    *Minimum required OS versions: Windows 7, Android 5.0 or iOS 9.0
+</div>
+
+<p>GSGO+ is also accessible on your web browser at <a href="https://geosyncgo.com/go">https://geosyncgo.com/go</a></p>
+<p>If you are using the website from a mobile browser, we recommend adding it to your home screen. 
+On Android, use Chrome to navigate to the website above and find the Add to Home Screen option. 
+On iOS, perform the same steps but use Safari.</p>
+<p>If a map has already been created for you to use, you can skip to the <a href="/docs/using-the-map">Using the Map</a> section.
+If you would like to browse public maps, scroll down to the <a href="#map-discovery">Map Discovery</a> information.
+If you want to build a map, read on to learn about creating your first project.</p>
+<h2 id="your-first-map">Your First Map</h2>
+<p>After signing into an account you will see a list of projects that are available for use. If this is the first time you have signed in,
+the list will be blank. If you are an account administrator, you will have an account link (<i class="mdi-action-verified-user"></i> ACCOUNT) 
+at the bottom of the project list. Clicking this link will take you to the Administration Console where you can build a map.</p>
+<p>The following steps convey the basics of building a project. For detailed information about the Administration Console, please refer
+to the <a href="/docs/managing-projects">Managing Projects</a> section of the documentation.</p>
+<h2 id="sources">Sources</h2>
+<p>To build a map, we need data. The sources section allows us to upload data from files, connect to an existing MapSync Cloud Database or link to
+an external feature service. For this exercise, we will connect to an external feature service. Click the new source link (<i class="mdi-action-dns"></i> New)
+to create a data source. Set the name to Boston Subway Stations. In the Type field select ArcGIS Feature Service. In the URL field enter the following:</p>
+<pre><code class="lang-js">https://services.arcgis.com/XWaQZrOGjgrsZ6Cu/arcgis/rest/services/subway_walk/FeatureServer/0
+</code></pre>
+<p>The circle button at the bottom of the form is the save (<i class="mdi-device-sd-storage"></i>) button. Click it to add the source to your account. Now, add another ArcGIS Feature Service
+source. Name it Subway Lines, and use the following URL:</p>
+<pre><code class="lang-js">https://services.arcgis.com/XWaQZrOGjgrsZ6Cu/arcgis/rest/services/subway_walk/FeatureServer/1
+</code></pre>
+<h2 id="styles">Styles</h2>
+<p>The styles section allows you to customize the appearance of the data on the map. For now, we will use the default style. Click the new style link
+(<i class="mdi-image-style"></i> New), name it Subway and then click save (<i class="mdi-device-sd-storage"></i>).</p>
+<h2 id="layers">Layers</h2>
+<p>Layers allow you to combine the styles with a source. Click the new layer link (<i class="mdi-maps-layers"></i> New) and name the layer Subway Stations. Click on the SOURCE header and set the
+Source option to Subway Stations. For the Label Field, set it to STATION. Then click on the STYLE header and set the Default Style to Subway. Click save (<i class="mdi-device-sd-storage"></i>).</p>
+<p>Create another layer named Subway Lines. Set the Source to Subway Lines, the Label Field to LINE and the Default Style to Subway. Click save (<i class="mdi-device-sd-storage"></i>).</p>
+<h2 id="tilesets">Tilesets</h2>
+<p>This is the background images for your map. To make this easier we provide preconfigured tilesets. To import a tileset click
+the import link (<i class="mdi-file-file-download"></i> Import). This we bring up a list of tilesets, select MapQuest OSM and it will
+be added to your account.</p>
+<h2 id="projects">Projects</h2>
+<p>Now we pull it all together. Click the new link (<i class="mdi-content-content-paste"></i> New) and name the project Boston Subway. On Initial Latitude, click the choose link. A map will be displayed.
+Center the map on Boston, MA and then zoom down to level 12 indicated by the number in the top left corner.</p>
+<ul>
+<li>Click on the USERS header. Set the dropdown to your username and then hit the add button (<i class="mdi-content-add"></i>). </li>
+<li>Click on the LAYERS header. Set the dropdown to Subway Stations and click the add button (<i class="mdi-content-add"></i>). Repeat for the Subway Lines layer.</li>
+<li>Click on the TILESETS header. Set the dropdown to MapQuest OSM and click the add button (<i class="mdi-content-add"></i>). Then save (<i class="mdi-device-sd-storage"></i>) the project.</li>
+</ul>
+<h2 id="viewing-the-map">Viewing the Map</h2>
+<p>Let&#39;s step back and see what we got. In the top right corner hit the options button (<i class="mdi-navigation-more-vert"></i>) and choose the Home option. This will take us back to
+the start where we can see our project list. Now we should see our Boston Subway project. Click on the project name and we should see the Boston Subway Stations and
+Subway Lines. Use the map to interact with the data. The <a href="/docs/using-the-map">Using the Map</a> section gives an in depth look at all the map features.</p>
+<h2 id="map-discovery">Map Discovery</h2>
+<p>If a map is set to be publicly accessible, it can be found in the public maps repository. To search the repository, on the sign in
+screen click the discover maps link (Discover Maps <i class="mdi-action-explore"></i>). This page provides a search field that lets
+you query public maps by name. If the map owner has provided a description, it will be shown underneath the map name in the search
+results. Clicking on a search result will open the corresponding public map. All the documentation in the <a href="/docs/using-the-map">Using the Map</a>
+section applies to both public and private maps.</p>
+
+                    </div>
+                
+            </div>
+        </div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+                    <li><a href="https://www.youtube.com/user/mapsync" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					<li><a href="https://twitter.com/mapsync_co" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/MapSync/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="mailto:info@mapsync.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+                &copy <a href="http://www.mapsync.com">MapSync</a>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+            <script src="/js/materialize.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#toc').pushpin({ top: $('#toc').offset().top, bottom: $('#contents').height()- $('#toc').height() });
+                    $('h2').scrollSpy();
+                });
+            </script>
+	</body>
+</html>

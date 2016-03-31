@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GeoSync GO Plus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/css/font-awesome.css" />
+        <link rel="stylesheet" href="/css/materialize.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        
+        <link rel="shortcut icon" href="/img/favicon.ico">
+	</head>
+	<body>
+        <nav>
+            <div class="nav-wrapper">
+            <a href="/" class="brand-logo"><img id="go-logo" src="/img/go_logo_white.png" /></a>
+            <ul id="main-nav" class="right">
+                
+                    <li class="active"><a href="/">Home<i class="mdi-action-home right"></i></a></li>
+                    <li><a href="/docs">Docs<i class="mdi-action-bookmark-outline right"></i></a></li>
+                
+            </ul>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                
+                    <div class="col s12">
+                        <p>GeoSync GO (GSGO) is a cloud-based mapping application that makes working with
+geographic information simple. The service is designed to turn your data into attractive, approachable maps
+that anyone can use. GSGO has powerful customization options to allow organizations to build asset
+intelligence in a way that meets their needs.</p>
+<h2 id="how-does-it-work">How does it work</h2>
+<p>The activities in GSGO fall into three broad catagories:</p>
+<div class="row" style="text-align:center;">
+    <div class="col s12 m4">
+        <i class="mdi-action-visibility small"></i><br><strong>Visualization</strong><br>Users consuming geographic information. This action encompasses interacting with the map, searching layers, browsing the 
+        tabular feature data and viewing the feature data rendered on the map.<br><br>
+    </div>
+    <div class="col s12 m4">
+        <i class="mdi-action-input small"></i><br><strong>Collection</strong><br>Users gathering information on new or existing features. This revolves around customized forms to gather pertinent data and powerful workflows that deliver reports back into your system.<br><br>
+    </div>
+    <div class="col s12 m4">
+        <i class="mdi-action-group-work small"></i><br><strong>Management</strong><br>Administrative processes for understanding current and upcoming work. This consists of views that monitor the work being done and notifications that alert users to scheduled maintainence.<br><br>
+    </div>
+</div>
+
+<p>GSGO has a flexible architecture that makes it a great tool for a wide range of scenarios. The only expectation is that the task has
+an emphasis on geographic information. We have aided in implementing GSGO into a number of projects. Below is short list of common setups.</p>
+<p>Utility Asset Management<br>Emergency Management<br>Fire Planning<br>MS4 Data Management<br>E911 Addressing<br>Fire Hydrant Flow Testing<br>PVA Property Mapping</p>
+<h2 id="what-is-geosync-go-plus">What is GeoSync GO Plus</h2>
+<p>GSGO is based around geographic data communication. The foundation is built around the simple task of importing data and then displaying it anywhere.
+Our web interface is named GeoSync GO Plus (GSGO+). It is an extension of our service that puts more functionality in the cloud. The
+most impactful capability enabled by GSGO+ is creating and editing maps directly on our servers.</p>
+<p>A map project consists of five parts:</p>
+<ul>
+<li><strong>Users</strong> - list of people with access to the map project.</li>
+<li><strong>Sources</strong> - geographic features imported into a geospatial database hosted on our servers or served from an external feature service.</li>
+<li><strong>Styles</strong> - settings that allow you to control the appearance of the features.</li>
+<li><strong>Layers</strong> - combination of a style and a source to make a unique element for display.</li>
+<li><strong>Tilesets</strong> - background map provided by a grid of images</li>
+</ul>
+<p>Each of these sections generate interchangable items for use on any map project. The projects section is where you create the map project
+that will be a collection of the these items. Once a map project is created, it will be available to the users specified in the project. 
+Those users will be able to access it from the web and any of our GSGO+ apps.</p>
+<p>This is just a brief overview of GSGO+. To find out more, please read our <a href="/docs">Documentation</a>.</p>
+<h2 id="why-choose-geosync-go">Why choose GeoSync GO</h2>
+<p>For those not using asset management software, GSGO provides a simple way to ditch handwritten forms and manual data entry. The old way of managing field data
+is slow, error-prone and too static. GSGO updates information instantly, nothing has to be typed multiple times and forms can be changed anytime. GSGO makes
+it easy for anyone to use and contribute to projects.</p>
+<p>For those using other GIS solutions, GSGO can complement existing workflows. You can utilize information from feature services and current data sources to 
+build maps. These maps can just be a simple way to view geographic systems or they can utilize forms to continuously deliver reports from field workers.</p>
+<p>For those using a product that mirrors the functionality of GSGO, we ask that you contact us so that we can give you an estimate on how much savings
+switching to our service can provide.</p>
+
+                    </div>
+                
+            </div>
+        </div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+                    <li><a href="https://www.youtube.com/user/mapsync" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+					<li><a href="https://twitter.com/mapsync_co" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.facebook.com/MapSync/" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="mailto:info@mapsync.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+                &copy <a href="http://www.mapsync.com">MapSync</a>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="/js/jquery.min.js"></script>
+            <script src="/js/materialize.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#toc').pushpin({ top: $('#toc').offset().top, bottom: $('#contents').height()- $('#toc').height() });
+                    $('h2').scrollSpy();
+                });
+            </script>
+	</body>
+</html>
